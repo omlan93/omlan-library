@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    height: 100%;
+    font-family: "Nunito Sans", sans-serif;
+
+}
+
+body {
+    height: 100%;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100%;
+    background-color: cornsilk;
+    overflow: auto;
+
+}
+
+/* .container>div {
+    border: 1px solid black;
+} */
+
+.sidebar {
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    position: sticky;
+    top: 0;
+}
+
+/* .sidebar>div {
+    border: 1px solid red;
+} */
+
+.heading {
+    font-family: "Playwrite AU QLD", sans-serif;
+    text-align: center;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    align-items: center;
+}
+
+.radio-field {
+    display: flex;
+    gap: 10px;
+}
+
+.input-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.input-box>label {
+    text-align: end;
+}
+
+.input-box>input {
+    outline: none;
+    border: 1px solid rgb(202, 198, 198);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(128, 128, 221);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-book-btn:hover {
+    padding: 12px 22px;
+    background-color: rgb(96, 96, 176);
+}
+
+.book-shelf {
+    background-color: skyblue;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    overflow: auto;
+}
+
+.book-heading {
+    font-family: "Playwrite AU QLD", sans-serif;
+    text-align: center;
+}
+
+.book-card-container {
+    /* background-color: cornsilk; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    grid-template-rows: 30%;
+    grid-auto-rows: 30%;
+    gap: 30px;
+    padding: 20px 50px;
+}
+
+.book-card-container>div {
+    background-color: cornsilk;
+    border-radius: 5px;
+}
+
+.book-card {
+    display: grid;
+    grid-template-rows: 80% 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-card>.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.button-container {
+    display: flex;
+    gap: 5px;
+}
+
+.book-card .remove-btn {
+    background-color: rgb(220, 51, 51);
+}
+
+.book-card .mark-btn {
+    background-color: rgb(102, 213, 102);
+}

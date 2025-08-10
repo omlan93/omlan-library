@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="heading">
+                <h1>OmlanLibrary</h1>
+            </div>
+            <form class="input-field">
+                <div class="input-box">
+                    <label for="name">Book-Name</label>
+                    <input class="name" type="text" id="name" name='name' required>
+
+                    <label for="author">Author</label>
+                    <input class="author" type="text" id="author" name="author" required>
+
+
+                    <label for="pages">Pages</label>
+                    <input class="pages" type="number" id="pages" name="pages" required>
+
+                </div>
+                <div class="radio-field">
+                    <label for="read">
+                        <input type="radio" name="radio" class="read" id="read" value="read">
+                        Read</label>
+                    <label for="not-read">
+                        <input type="radio" name="radio" class="not-read" id="not-read" value="not-read">
+                        Not Read</label>
+                </div>
+                <button class="add-book-btn" type="reset">Add Book</button>
+            </form>
+        </div>
+        <div class="book-shelf">
+            <div class="book-heading">
+                <h1>Books</h1>
+            </div>
+            <div class="book-card-container">
+                <div class="book-card">
+                    <div class="info-container">
+                        <h3 class="book-name">Shesher Kobita</h3>
+                        <h3 class="writer-name">Rabindranath Thakur</h3>
+                        <h4 class="book-page">290 Pages</h4>
+                        <h4 class="read-or-unread">Read</h4>
+                    </div>
+                    <div class="button-container">
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn">Mark as Unread</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
